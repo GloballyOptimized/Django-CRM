@@ -31,7 +31,7 @@
     }
 
     .received {
-      background-color: #f1f0f0;
+      background-color: #f3eea9;
       align-self: flex-start;
     }
 
@@ -42,7 +42,7 @@
       left: 0;
       right: 0;
       padding: 10px;
-      background-color: #f8f9fa;
+      background-color: #d6e6f7;
     }
 
     .message-input {
@@ -77,16 +77,6 @@
       
       <ul class="list-unstyled messages-list">
         
-        <!-- <li class="message received">
-          <div class="message-text">
-            <div class="message-sender">
-              <b>AI Chatbot</b>
-            </div>
-            <div class="message-content">
-              Hi {{user.username}}, I am your AI Chatbot, you can ask me anything.
-            </div>
-          </div>
-        </li> -->
 
         {% for chat in chats %}
           {% if chat.user == request.user %}
